@@ -106,7 +106,7 @@ class LabelSwitch: UIView {
             }
         }
         
-        delegate.didTapLabelSwitch(state: switchState)
+        delegate.didTapLabelSwitch(state: switchState, labelSwitch: self)
     }
     
     
@@ -175,5 +175,5 @@ struct SwitchConfiguration {
 }
 
 protocol LableSwitchDelegate: AnyObject {
-    func didTapLabelSwitch(state: SwitchState)
+    func didTapLabelSwitch(state: SwitchState, labelSwitch: LabelSwitch)
 }
