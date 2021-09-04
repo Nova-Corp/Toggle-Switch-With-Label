@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LabelSwitch: UIView {
+final class LabelSwitch: UIView {
     
     private lazy var leftLabel: UILabel = {
         let label = UILabel()
@@ -44,18 +44,27 @@ class LabelSwitch: UIView {
         return view
     }()
     
+    private lazy var innerCircleView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.cornerRadius = self.frame.height / 2
+        view.isUserInteractionEnabled = true
+        return view
+    }()
+    
     private var leadingAnchorForLeftLabel: CGFloat = 0
     private let leftLabelLeadingAnchorIdentifier = "LeftLabelLeadingAnchor"
     
     // MARK:- Switch Configuration
     var switchConfiguration: SwitchConfiguration! = SwitchConfiguration(leftText: "Label",
-                                                  leftColor: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1),
-                                                  rightText: "Switch",
-                                                  rightColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1),
-                                                  font: .boldSystemFont(ofSize: 12),
-                                                  textColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
-                                                  circleColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
-                                                  currentState: .Right){
+                                                                        leftColor: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1),
+                                                                        rightText: "Switch",
+                                                                        rightColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1),
+                                                                        font: .boldSystemFont(ofSize: 12),
+                                                                        textColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
+                                                                        circleColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
+                                                                        innerCircle: true,
+                                                                        currentState: .Right){
         didSet{
             configureView()
         }
@@ -75,42 +84,36 @@ class LabelSwitch: UIView {
         addSubview(leftLabel)
         addSubview(rightLabel)
         addSubview(circleView)
+        circleView.addSubview(innerCircleView)
         
         updateConstraintsForLabel()
         
         // MARK:- Tap Recognizer
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(switchTapped))
         circleView.addGestureRecognizer(tapGestureRecognizer)
-        
-        
     }
     
     @objc private func switchTapped() {
-        
         if switchState == SwitchState.Right {
             switchState = .Left
-            
             UIView.animate(withDuration: 0.3) {[weak self] in
                 self?.constraintWith(
                     identifier: self!.leftLabelLeadingAnchorIdentifier)?.constant = -(self?.leftLabel.frame.width)!
                 self?.backgroundColor = self?.switchConfiguration.rightColor
+                self?.innerCircleView.backgroundColor = self?.switchConfiguration.rightColor
                 self?.layoutIfNeeded()
             }
         } else {
             switchState = .Right
-    
             UIView.animate(withDuration: 0.3) {[weak self] in
                 self?.constraintWith(identifier: self!.leftLabelLeadingAnchorIdentifier)?.constant = 0
                 self?.backgroundColor = self?.switchConfiguration.leftColor
+                self?.innerCircleView.backgroundColor = self?.switchConfiguration.leftColor
                 self?.layoutIfNeeded()
             }
         }
-        
         delegate.didTapLabelSwitch(state: switchState, labelSwitch: self)
     }
-    
-    
-    
     
     private func updateConstraintsForLabel() {
         
@@ -119,10 +122,14 @@ class LabelSwitch: UIView {
         if switchState == SwitchState.Right {
             leftLabelAnchor = leftLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0)
             backgroundColor = switchConfiguration.leftColor
+            innerCircleView.backgroundColor = switchConfiguration.leftColor
         }else{
             leftLabelAnchor = leftLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: -(frame.width - frame.height))
             backgroundColor = switchConfiguration.rightColor
+            innerCircleView.backgroundColor = switchConfiguration.rightColor
         }
+        
+        innerCircleView.isHidden = switchConfiguration.innerCircle
         
         leftLabelAnchor.identifier = leftLabelLeadingAnchorIdentifier
         
@@ -139,6 +146,12 @@ class LabelSwitch: UIView {
             circleView.bottomAnchor.constraint(equalTo: bottomAnchor),
             circleView.widthAnchor.constraint(equalToConstant: frame.height),
             
+            // MARK:- Constraints for Circle
+            innerCircleView.topAnchor.constraint(equalTo: circleView.topAnchor, constant: 7),
+            innerCircleView.leadingAnchor.constraint(equalTo: circleView.leadingAnchor, constant: 7),
+            innerCircleView.centerXAnchor.constraint(equalTo: circleView.centerXAnchor),
+            innerCircleView.centerYAnchor.constraint(equalTo: circleView.centerYAnchor),
+            
             // MARK:- Constraints for Right Label
             rightLabel.leadingAnchor.constraint(equalTo: circleView.trailingAnchor),
             rightLabel.topAnchor.constraint(equalTo: topAnchor),
@@ -148,7 +161,7 @@ class LabelSwitch: UIView {
     }
 }
 extension LabelSwitch{
-    func constraintWith(identifier: String) -> NSLayoutConstraint?{
+    private func constraintWith(identifier: String) -> NSLayoutConstraint?{
         return self.constraints.first(where: {$0.identifier == identifier})
     }
 }
@@ -159,19 +172,15 @@ enum SwitchState {
 }
 
 struct SwitchConfiguration {
-    let leftText: String
+    let leftText: String?
     let leftColor: UIColor
-    
-    let rightText: String
+    let rightText: String?
     let rightColor: UIColor
-    
     let font: UIFont
     let textColor: UIColor
-    
     let circleColor: UIColor
-    
+    let innerCircle: Bool
     let currentState: SwitchState
-    
 }
 
 protocol LableSwitchDelegate: AnyObject {

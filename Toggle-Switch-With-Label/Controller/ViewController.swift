@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var labelSwitchOne: LabelSwitch!
+    @IBOutlet weak var labelSwitchOne: LabelSwitch!
     
     lazy var labelSwitchTwo: LabelSwitch = {
         let labelSwitch = LabelSwitch(frame: .init(x: view.frame.width/2 - 50,
@@ -24,16 +24,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         labelSwitchOne.delegate = self
-        
-        
-        labelSwitchOne.switchConfiguration = SwitchConfiguration(leftText: "Label",
-                                                              leftColor: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1),
-                                                              rightText: "Switch",
-                                                              rightColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1),
-                                                              font: .boldSystemFont(ofSize: 14),
-                                                              textColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
-                                                              circleColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
-                                                              currentState: .Left)
+        labelSwitchOne.switchConfiguration = SwitchConfiguration(leftText: nil,
+                                                                 leftColor: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1),
+                                                                 rightText: nil,
+                                                                 rightColor: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1),
+                                                                 font: .boldSystemFont(ofSize: 14),
+                                                                 textColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
+                                                                 circleColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
+                                                                 innerCircle: true,
+                                                                 currentState: .Left)
         
         labelSwitchTwo.delegate = self
         labelSwitchTwo.switchConfiguration = SwitchConfiguration(leftText: "Label",
@@ -43,6 +42,7 @@ class ViewController: UIViewController {
                                                               font: .boldSystemFont(ofSize: 14),
                                                               textColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
                                                               circleColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
+                                                              innerCircle: false,
                                                               currentState: .Right)
         
          view.addSubview(labelSwitchTwo)
