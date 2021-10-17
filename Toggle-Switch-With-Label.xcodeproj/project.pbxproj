@@ -7,16 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04008131271C186F004B0A49 /* ToggleSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0400812F271C186F004B0A49 /* ToggleSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04008134271C186F004B0A49 /* ToggleSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400812D271C186F004B0A49 /* ToggleSwitch.framework */; };
+		04008135271C186F004B0A49 /* ToggleSwitch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0400812D271C186F004B0A49 /* ToggleSwitch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04BA3D2C271C1A96004D7655 /* SwitchConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA3D2A271C1A96004D7655 /* SwitchConfiguration.swift */; };
+		04BA3D2D271C1A96004D7655 /* ToggleSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA3D2B271C1A96004D7655 /* ToggleSwitch.swift */; };
 		84E9BB782650CAF9005C9948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB772650CAF9005C9948 /* AppDelegate.swift */; };
 		84E9BB7A2650CAF9005C9948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB792650CAF9005C9948 /* SceneDelegate.swift */; };
 		84E9BB7C2650CAF9005C9948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB7B2650CAF9005C9948 /* ViewController.swift */; };
 		84E9BB7F2650CAF9005C9948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E9BB7D2650CAF9005C9948 /* Main.storyboard */; };
 		84E9BB812650CAFA005C9948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E9BB802650CAFA005C9948 /* Assets.xcassets */; };
 		84E9BB842650CAFA005C9948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E9BB822650CAFA005C9948 /* LaunchScreen.storyboard */; };
-		84E9BB902650CBBA005C9948 /* LabelSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB8F2650CBBA005C9948 /* LabelSwitch.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		04008132271C186F004B0A49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E9BB6C2650CAF9005C9948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0400812C271C186F004B0A49;
+			remoteInfo = ToggleSwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04008139271C186F004B0A49 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04008135271C186F004B0A49 /* ToggleSwitch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0400812D271C186F004B0A49 /* ToggleSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToggleSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0400812F271C186F004B0A49 /* ToggleSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToggleSwitch.h; sourceTree = "<group>"; };
+		04008130271C186F004B0A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BA3D2A271C1A96004D7655 /* SwitchConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchConfiguration.swift; sourceTree = "<group>"; };
+		04BA3D2B271C1A96004D7655 /* ToggleSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleSwitch.swift; sourceTree = "<group>"; };
+		04BA3D2E271C210C004D7655 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		84E9BB742650CAF9005C9948 /* Toggle-Switch-With-Label.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toggle-Switch-With-Label.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E9BB772650CAF9005C9948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E9BB792650CAF9005C9948 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,24 +59,51 @@
 		84E9BB802650CAFA005C9948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E9BB832650CAFA005C9948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E9BB852650CAFA005C9948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84E9BB8F2650CBBA005C9948 /* LabelSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		84E9BB712650CAF9005C9948 /* Frameworks */ = {
+		0400812A271C186F004B0A49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84E9BB712650CAF9005C9948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04008134271C186F004B0A49 /* ToggleSwitch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0400812E271C186F004B0A49 /* ToggleSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				04BA3D29271C1A96004D7655 /* Module */,
+				0400812F271C186F004B0A49 /* ToggleSwitch.h */,
+				04008130271C186F004B0A49 /* Info.plist */,
+			);
+			path = ToggleSwitch;
+			sourceTree = "<group>";
+		};
+		04BA3D29271C1A96004D7655 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				04BA3D2A271C1A96004D7655 /* SwitchConfiguration.swift */,
+				04BA3D2B271C1A96004D7655 /* ToggleSwitch.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		84E9BB6B2650CAF9005C9948 = {
 			isa = PBXGroup;
 			children = (
 				84E9BB762650CAF9005C9948 /* Toggle-Switch-With-Label */,
+				0400812E271C186F004B0A49 /* ToggleSwitch */,
 				84E9BB752650CAF9005C9948 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				84E9BB742650CAF9005C9948 /* Toggle-Switch-With-Label.app */,
+				0400812D271C186F004B0A49 /* ToggleSwitch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				84E9BB7B2650CAF9005C9948 /* ViewController.swift */,
-				84E9BB8F2650CBBA005C9948 /* LabelSwitch.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,6 +156,7 @@
 		84E9BB8E2650CB2F005C9948 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				04BA3D2E271C210C004D7655 /* README.md */,
 				84E9BB802650CAFA005C9948 /* Assets.xcassets */,
 				84E9BB822650CAFA005C9948 /* LaunchScreen.storyboard */,
 				84E9BB852650CAFA005C9948 /* Info.plist */,
@@ -104,7 +166,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		04008128271C186F004B0A49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04008131271C186F004B0A49 /* ToggleSwitch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		0400812C271C186F004B0A49 /* ToggleSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04008136271C186F004B0A49 /* Build configuration list for PBXNativeTarget "ToggleSwitch" */;
+			buildPhases = (
+				04008128271C186F004B0A49 /* Headers */,
+				04008129271C186F004B0A49 /* Sources */,
+				0400812A271C186F004B0A49 /* Frameworks */,
+				0400812B271C186F004B0A49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToggleSwitch;
+			productName = ToggleSwitch;
+			productReference = 0400812D271C186F004B0A49 /* ToggleSwitch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		84E9BB732650CAF9005C9948 /* Toggle-Switch-With-Label */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E9BB882650CAFA005C9948 /* Build configuration list for PBXNativeTarget "Toggle-Switch-With-Label" */;
@@ -112,10 +203,12 @@
 				84E9BB702650CAF9005C9948 /* Sources */,
 				84E9BB712650CAF9005C9948 /* Frameworks */,
 				84E9BB722650CAF9005C9948 /* Resources */,
+				04008139271C186F004B0A49 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04008133271C186F004B0A49 /* PBXTargetDependency */,
 			);
 			name = "Toggle-Switch-With-Label";
 			productName = "Toggle-Switch-With-Label";
@@ -129,9 +222,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Success Resource Pte Ltd.";
 				TargetAttributes = {
+					0400812C271C186F004B0A49 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
 					84E9BB732650CAF9005C9948 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -151,11 +248,19 @@
 			projectRoot = "";
 			targets = (
 				84E9BB732650CAF9005C9948 /* Toggle-Switch-With-Label */,
+				0400812C271C186F004B0A49 /* ToggleSwitch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0400812B271C186F004B0A49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84E9BB722650CAF9005C9948 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,18 +274,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04008129271C186F004B0A49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BA3D2C271C1A96004D7655 /* SwitchConfiguration.swift in Sources */,
+				04BA3D2D271C1A96004D7655 /* ToggleSwitch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84E9BB702650CAF9005C9948 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84E9BB7C2650CAF9005C9948 /* ViewController.swift in Sources */,
 				84E9BB782650CAF9005C9948 /* AppDelegate.swift in Sources */,
-				84E9BB902650CBBA005C9948 /* LabelSwitch.swift in Sources */,
 				84E9BB7A2650CAF9005C9948 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04008133271C186F004B0A49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0400812C271C186F004B0A49 /* ToggleSwitch */;
+			targetProxy = 04008132271C186F004B0A49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84E9BB7D2650CAF9005C9948 /* Main.storyboard */ = {
@@ -202,6 +323,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		04008137271C186F004B0A49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToggleSwitch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.ToggleSwitch";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		04008138271C186F004B0A49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToggleSwitch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.ToggleSwitch";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		84E9BB862650CAFA005C9948 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -228,6 +410,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -288,6 +471,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -319,6 +503,7 @@
 		84E9BB892650CAFA005C9948 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Toggle-Switch-With-Label/Global/Info.plist";
@@ -336,6 +521,7 @@
 		84E9BB8A2650CAFA005C9948 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Toggle-Switch-With-Label/Global/Info.plist";
@@ -353,6 +539,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04008136271C186F004B0A49 /* Build configuration list for PBXNativeTarget "ToggleSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04008137271C186F004B0A49 /* Debug */,
+				04008138271C186F004B0A49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84E9BB6F2650CAF9005C9948 /* Build configuration list for PBXProject "Toggle-Switch-With-Label" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
