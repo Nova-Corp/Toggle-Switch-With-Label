@@ -6,7 +6,7 @@
 ![Storyboard setup](/assets/Screenshot1.png?raw=true "Storyboard")
 
 ### ViewController
-```
+```swift
 labelSwitchOne.delegate = self
 labelSwitchOne.switchConfiguration = SwitchConfiguration(leftText: nil,
                                                          leftColor: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1),
