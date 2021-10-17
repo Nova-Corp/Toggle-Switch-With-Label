@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/Nova-Corp/Toggle-Switch-With-Label.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "Toggle-Switch-With-Label/ToggleSwitch/**/*.{swift}"
+  spec.source_files  = "ToggleSwitch/**/*.{swift}"
   spec.swift_versions = "5.0"
   
 end
