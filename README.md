@@ -2,6 +2,14 @@
 # Awesome Toggle Switch
 ## Usage
 
+### installation
+```ruby
+use_frameworks!
+target 'Target-Name' do
+  pod 'NCToggleSwitch'
+end
+```
+
 ### Storyboard
 ![Storyboard setup](/assets/Screenshot1.png?raw=true "Storyboard")
 
