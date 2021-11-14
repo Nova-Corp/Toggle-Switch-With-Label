@@ -12,7 +12,7 @@
 		040AD8522740AFA000FD2C26 /* NCToggleSwitch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 040AD83C2740AFA000FD2C26 /* NCToggleSwitch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		040AD85C2740AFC300FD2C26 /* SwitchConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AD85A2740AFC300FD2C26 /* SwitchConfiguration.swift */; };
 		040AD85D2740AFC300FD2C26 /* ToggleSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AD85B2740AFC300FD2C26 /* ToggleSwitch.swift */; };
-		04BA3D30271C548F004D7655 /* ToggleSwitch.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04BA3D2F271C548F004D7655 /* ToggleSwitch.podspec */; };
+		04BA3D30271C548F004D7655 /* NCToggleSwitch.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04BA3D2F271C548F004D7655 /* NCToggleSwitch.podspec */; };
 		84E9BB782650CAF9005C9948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB772650CAF9005C9948 /* AppDelegate.swift */; };
 		84E9BB7A2650CAF9005C9948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB792650CAF9005C9948 /* SceneDelegate.swift */; };
 		84E9BB7C2650CAF9005C9948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB7B2650CAF9005C9948 /* ViewController.swift */; };
@@ -52,7 +52,7 @@
 		040AD85A2740AFC300FD2C26 /* SwitchConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchConfiguration.swift; sourceTree = "<group>"; };
 		040AD85B2740AFC300FD2C26 /* ToggleSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleSwitch.swift; sourceTree = "<group>"; };
 		04BA3D2E271C210C004D7655 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		04BA3D2F271C548F004D7655 /* ToggleSwitch.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToggleSwitch.podspec; sourceTree = SOURCE_ROOT; };
+		04BA3D2F271C548F004D7655 /* NCToggleSwitch.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NCToggleSwitch.podspec; sourceTree = SOURCE_ROOT; };
 		04BA3D31271C5E85004D7655 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = SOURCE_ROOT; };
 		84E9BB742650CAF9005C9948 /* Toggle-Switch-With-Label.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toggle-Switch-With-Label.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E9BB772650CAF9005C9948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				04BA3D31271C5E85004D7655 /* LICENSE.txt */,
-				04BA3D2F271C548F004D7655 /* ToggleSwitch.podspec */,
+				04BA3D2F271C548F004D7655 /* NCToggleSwitch.podspec */,
 				04BA3D2E271C210C004D7655 /* README.md */,
 				84E9BB802650CAFA005C9948 /* Assets.xcassets */,
 				84E9BB822650CAFA005C9948 /* LaunchScreen.storyboard */,
@@ -269,7 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BA3D30271C548F004D7655 /* ToggleSwitch.podspec in Resources */,
+				04BA3D30271C548F004D7655 /* NCToggleSwitch.podspec in Resources */,
 				84E9BB842650CAFA005C9948 /* LaunchScreen.storyboard in Resources */,
 				84E9BB812650CAFA005C9948 /* Assets.xcassets in Resources */,
 				84E9BB7F2650CAF9005C9948 /* Main.storyboard in Resources */,
