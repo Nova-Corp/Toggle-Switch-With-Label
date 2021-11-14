@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ToggleSwitch
+import NCToggleSwitch
 
 class ViewController: UIViewController {
     

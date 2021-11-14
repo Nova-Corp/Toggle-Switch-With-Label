@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04008131271C186F004B0A49 /* ToggleSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0400812F271C186F004B0A49 /* ToggleSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04008134271C186F004B0A49 /* ToggleSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400812D271C186F004B0A49 /* ToggleSwitch.framework */; };
-		04008135271C186F004B0A49 /* ToggleSwitch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0400812D271C186F004B0A49 /* ToggleSwitch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		04BA3D2C271C1A96004D7655 /* SwitchConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA3D2A271C1A96004D7655 /* SwitchConfiguration.swift */; };
-		04BA3D2D271C1A96004D7655 /* ToggleSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA3D2B271C1A96004D7655 /* ToggleSwitch.swift */; };
+		040AD84E2740AFA000FD2C26 /* NCToggleSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 040AD83E2740AFA000FD2C26 /* NCToggleSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		040AD8512740AFA000FD2C26 /* NCToggleSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040AD83C2740AFA000FD2C26 /* NCToggleSwitch.framework */; };
+		040AD8522740AFA000FD2C26 /* NCToggleSwitch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 040AD83C2740AFA000FD2C26 /* NCToggleSwitch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		040AD85C2740AFC300FD2C26 /* SwitchConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AD85A2740AFC300FD2C26 /* SwitchConfiguration.swift */; };
+		040AD85D2740AFC300FD2C26 /* ToggleSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AD85B2740AFC300FD2C26 /* ToggleSwitch.swift */; };
 		04BA3D30271C548F004D7655 /* ToggleSwitch.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04BA3D2F271C548F004D7655 /* ToggleSwitch.podspec */; };
 		84E9BB782650CAF9005C9948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB772650CAF9005C9948 /* AppDelegate.swift */; };
 		84E9BB7A2650CAF9005C9948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BB792650CAF9005C9948 /* SceneDelegate.swift */; };
@@ -22,12 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04008132271C186F004B0A49 /* PBXContainerItemProxy */ = {
+		040AD84F2740AFA000FD2C26 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84E9BB6C2650CAF9005C9948 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0400812C271C186F004B0A49;
-			remoteInfo = ToggleSwitch;
+			remoteGlobalIDString = 040AD83B2740AFA000FD2C26;
+			remoteInfo = NCToggleSwitch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04008135271C186F004B0A49 /* ToggleSwitch.framework in Embed Frameworks */,
+				040AD8522740AFA000FD2C26 /* NCToggleSwitch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,11 +46,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0400812D271C186F004B0A49 /* ToggleSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToggleSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0400812F271C186F004B0A49 /* ToggleSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToggleSwitch.h; sourceTree = "<group>"; };
-		04008130271C186F004B0A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04BA3D2A271C1A96004D7655 /* SwitchConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchConfiguration.swift; sourceTree = "<group>"; };
-		04BA3D2B271C1A96004D7655 /* ToggleSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleSwitch.swift; sourceTree = "<group>"; };
+		040AD83C2740AFA000FD2C26 /* NCToggleSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NCToggleSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		040AD83E2740AFA000FD2C26 /* NCToggleSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCToggleSwitch.h; sourceTree = "<group>"; };
+		040AD83F2740AFA000FD2C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040AD85A2740AFC300FD2C26 /* SwitchConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchConfiguration.swift; sourceTree = "<group>"; };
+		040AD85B2740AFC300FD2C26 /* ToggleSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleSwitch.swift; sourceTree = "<group>"; };
 		04BA3D2E271C210C004D7655 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		04BA3D2F271C548F004D7655 /* ToggleSwitch.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToggleSwitch.podspec; sourceTree = SOURCE_ROOT; };
 		04BA3D31271C5E85004D7655 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = SOURCE_ROOT; };
@@ -65,7 +65,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0400812A271C186F004B0A49 /* Frameworks */ = {
+		040AD8392740AFA000FD2C26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,28 +76,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04008134271C186F004B0A49 /* ToggleSwitch.framework in Frameworks */,
+				040AD8512740AFA000FD2C26 /* NCToggleSwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0400812E271C186F004B0A49 /* ToggleSwitch */ = {
+		040AD83D2740AFA000FD2C26 /* NCToggleSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				04BA3D29271C1A96004D7655 /* Module */,
-				0400812F271C186F004B0A49 /* ToggleSwitch.h */,
-				04008130271C186F004B0A49 /* Info.plist */,
+				040AD8592740AFC300FD2C26 /* Module */,
+				040AD83E2740AFA000FD2C26 /* NCToggleSwitch.h */,
+				040AD83F2740AFA000FD2C26 /* Info.plist */,
 			);
-			path = ToggleSwitch;
+			path = NCToggleSwitch;
 			sourceTree = "<group>";
 		};
-		04BA3D29271C1A96004D7655 /* Module */ = {
+		040AD8592740AFC300FD2C26 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				04BA3D2A271C1A96004D7655 /* SwitchConfiguration.swift */,
-				04BA3D2B271C1A96004D7655 /* ToggleSwitch.swift */,
+				040AD85A2740AFC300FD2C26 /* SwitchConfiguration.swift */,
+				040AD85B2740AFC300FD2C26 /* ToggleSwitch.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				84E9BB762650CAF9005C9948 /* Toggle-Switch-With-Label */,
-				0400812E271C186F004B0A49 /* ToggleSwitch */,
+				040AD83D2740AFA000FD2C26 /* NCToggleSwitch */,
 				84E9BB752650CAF9005C9948 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				84E9BB742650CAF9005C9948 /* Toggle-Switch-With-Label.app */,
-				0400812D271C186F004B0A49 /* ToggleSwitch.framework */,
+				040AD83C2740AFA000FD2C26 /* NCToggleSwitch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,33 +172,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		04008128271C186F004B0A49 /* Headers */ = {
+		040AD8372740AFA000FD2C26 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04008131271C186F004B0A49 /* ToggleSwitch.h in Headers */,
+				040AD84E2740AFA000FD2C26 /* NCToggleSwitch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0400812C271C186F004B0A49 /* ToggleSwitch */ = {
+		040AD83B2740AFA000FD2C26 /* NCToggleSwitch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04008136271C186F004B0A49 /* Build configuration list for PBXNativeTarget "ToggleSwitch" */;
+			buildConfigurationList = 040AD8532740AFA000FD2C26 /* Build configuration list for PBXNativeTarget "NCToggleSwitch" */;
 			buildPhases = (
-				04008128271C186F004B0A49 /* Headers */,
-				04008129271C186F004B0A49 /* Sources */,
-				0400812A271C186F004B0A49 /* Frameworks */,
-				0400812B271C186F004B0A49 /* Resources */,
+				040AD8372740AFA000FD2C26 /* Headers */,
+				040AD8382740AFA000FD2C26 /* Sources */,
+				040AD8392740AFA000FD2C26 /* Frameworks */,
+				040AD83A2740AFA000FD2C26 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ToggleSwitch;
-			productName = ToggleSwitch;
-			productReference = 0400812D271C186F004B0A49 /* ToggleSwitch.framework */;
+			name = NCToggleSwitch;
+			productName = NCToggleSwitch;
+			productReference = 040AD83C2740AFA000FD2C26 /* NCToggleSwitch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		84E9BB732650CAF9005C9948 /* Toggle-Switch-With-Label */ = {
@@ -213,7 +213,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				04008133271C186F004B0A49 /* PBXTargetDependency */,
+				040AD8502740AFA000FD2C26 /* PBXTargetDependency */,
 			);
 			name = "Toggle-Switch-With-Label";
 			productName = "Toggle-Switch-With-Label";
@@ -226,13 +226,12 @@
 		84E9BB6C2650CAF9005C9948 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Success Resource Pte Ltd.";
 				TargetAttributes = {
-					0400812C271C186F004B0A49 = {
+					040AD83B2740AFA000FD2C26 = {
 						CreatedOnToolsVersion = 12.5.1;
-						LastSwiftMigration = 1250;
 					};
 					84E9BB732650CAF9005C9948 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -253,13 +252,13 @@
 			projectRoot = "";
 			targets = (
 				84E9BB732650CAF9005C9948 /* Toggle-Switch-With-Label */,
-				0400812C271C186F004B0A49 /* ToggleSwitch */,
+				040AD83B2740AFA000FD2C26 /* NCToggleSwitch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0400812B271C186F004B0A49 /* Resources */ = {
+		040AD83A2740AFA000FD2C26 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,12 +279,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04008129271C186F004B0A49 /* Sources */ = {
+		040AD8382740AFA000FD2C26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BA3D2C271C1A96004D7655 /* SwitchConfiguration.swift in Sources */,
-				04BA3D2D271C1A96004D7655 /* ToggleSwitch.swift in Sources */,
+				040AD85C2740AFC300FD2C26 /* SwitchConfiguration.swift in Sources */,
+				040AD85D2740AFC300FD2C26 /* ToggleSwitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,10 +301,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04008133271C186F004B0A49 /* PBXTargetDependency */ = {
+		040AD8502740AFA000FD2C26 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0400812C271C186F004B0A49 /* ToggleSwitch */;
-			targetProxy = 04008132271C186F004B0A49 /* PBXContainerItemProxy */;
+			target = 040AD83B2740AFA000FD2C26 /* NCToggleSwitch */;
+			targetProxy = 040AD84F2740AFA000FD2C26 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -329,31 +328,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		04008137271C186F004B0A49 /* Debug */ = {
+		040AD8542740AFA000FD2C26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ToggleSwitch/Info.plist;
+				INFOPLIST_FILE = NCToggleSwitch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sparkout-tech-solution.toggleswitch";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.NCToggleSwitch";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -361,27 +356,24 @@
 			};
 			name = Debug;
 		};
-		04008138271C186F004B0A49 /* Release */ = {
+		040AD8552740AFA000FD2C26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ToggleSwitch/Info.plist;
+				INFOPLIST_FILE = NCToggleSwitch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sparkout-tech-solution.toggleswitch";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.NCToggleSwitch";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -547,11 +539,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04008136271C186F004B0A49 /* Build configuration list for PBXNativeTarget "ToggleSwitch" */ = {
+		040AD8532740AFA000FD2C26 /* Build configuration list for PBXNativeTarget "NCToggleSwitch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04008137271C186F004B0A49 /* Debug */,
-				04008138271C186F004B0A49 /* Release */,
+				040AD8542740AFA000FD2C26 /* Debug */,
+				040AD8552740AFA000FD2C26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

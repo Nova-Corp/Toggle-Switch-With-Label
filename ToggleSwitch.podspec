@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "ToggleSwitch"
+  spec.name         = "NCToggleSwitch"
   spec.version      = "1.0.0"
   spec.summary      = "Awesome toggle switch with labels"
   spec.description  = "You can include include in your project."
