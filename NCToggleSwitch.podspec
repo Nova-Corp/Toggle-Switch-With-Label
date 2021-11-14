@@ -10,11 +10,11 @@ Pod::Spec.new do |spec|
   spec.author             = { "Shanmugarajeshwaran R" => "shanmugarajeshwaran@sparkouttech.com" }
   spec.social_media_url   = "https://www.instagram.com/sharveshwaran.r"
 
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios, "12.0"
 
   spec.source       = { :git => "https://github.com/Nova-Corp/Toggle-Switch-With-Label.git", :tag => spec.version.to_s }
 
-  spec.source_files  = "ToggleSwitch/**/*.{swift}"
+  spec.source_files  = "NCToggleSwitch/**/*.{swift}"
   spec.swift_versions = "5.0"
   
 end
